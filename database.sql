@@ -262,14 +262,10 @@ CREATE TABLE IF NOT EXISTS `properties` (
   `level` int(11) NOT NULL DEFAULT 0,
   `extra` int(11) NOT NULL DEFAULT 0,
   `vip_level` int(11) NOT NULL DEFAULT 0,
-  `dis_default_interior` int(11) NOT NULL DEFAULT 0,
   `id_player` int(11) DEFAULT NULL,
-  `id_territory` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id_player` (`id_player`),
-  KEY `id_territory` (`id_territory`),
-  CONSTRAINT `properties_ibfk_1` FOREIGN KEY (`id_player`) REFERENCES `player` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
-  CONSTRAINT `properties_ibfk_2` FOREIGN KEY (`id_territory`) REFERENCES `territories` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+  CONSTRAINT `properties_ibfk_1` FOREIGN KEY (`id_player`) REFERENCES `player` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 
@@ -374,18 +370,6 @@ CREATE TABLE IF NOT EXISTS `pworks` (
   CONSTRAINT `pworks_ibfk_1` FOREIGN KEY (`id_player`) REFERENCES `player` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `pworks_ibfk_2` FOREIGN KEY (`id_work`) REFERENCES `works` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
-
-CREATE TABLE IF NOT EXISTS `pworks_points` (
-  `points` int(11) NOT NULL DEFAULT 0,
-  `last_prize` int(11) NOT NULL DEFAULT 0,
-  `id_player` int(11) NOT NULL,
-  `id_work` int(11) NOT NULL,
-  PRIMARY KEY (`id_player`,`id_work`),
-  KEY `id_work` (`id_work`),
-  CONSTRAINT `pworks_points_ibfk_1` FOREIGN KEY (`id_player`) REFERENCES `player` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `pworks_points_ibfk_2` FOREIGN KEY (`id_work`) REFERENCES `works` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 CREATE TABLE IF NOT EXISTS `territories` (
