@@ -15,6 +15,8 @@ Clean Roleplay 2 es una gamemode basada en **Super Roleplay 2**, extraída del r
 - Se borró el sistema /eco.
 - Sistema de allanar propiedades eliminado.
 - Sistema de pasar propiedad a banda eliminado.
+- Tutoriales de trabajos.
+- Trabajo repartidor y warehouse.
 - Y muchas cosas más...
 
 ## 🎯 Objetivo
