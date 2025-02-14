@@ -3,9 +3,24 @@
 Clean Roleplay 2 es una gamemode basada en **Super Roleplay 2**, extraída del repositorio de **nit (neetons)**, específicamente de la branch **bernard**.
 
 ## 🚀 Características
-- Código limpio y optimizado ✨.
-- Base estable para servidores roleplay 🎮.
-- Eliminación de código obsoleto y redundante 🧹.
+- Mantiene la esencia de Super Roleplay 2.
+- Se han eliminado los sistemas de mejores trabajadores y paga extra.
+- Se eliminó el sistema de 2AF por defecto.
+- Se eliminó IKEA (compra de muebles) junto con todo el sistema.
+- Se eliminó el sistema de strippers.
+- Se reemplazó SendNotification por los mensajes en el chat.
+- Se eliminaron varios sistemas, arrays y enums sin uso.
+- Se eliminaron las alarmas y el indicador de las ruedas en el air_speedo.
+- Arreglo de bug al usar /revivir (si el usuario es VIP te pone a ti 50.0 de vida).
+- Se borró el sistema /eco.
+- Sistema de allanar propiedades eliminado.
+- Sistema de pasar propiedad a banda eliminado.
+- Tutoriales de trabajos.
+- Trabajo repartidor y warehouse.
+- Y muchas cosas más...
+
+## 🎯 Objetivo
+Se busca proporcionar una base sólida y optimizada para proyectos roleplay sin código innecesario, facilitando su modificación y expansión.
 
 ## ⚠️ Requisitos
 ### 📌 Software necesario
