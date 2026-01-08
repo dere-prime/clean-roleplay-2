@@ -2,7 +2,7 @@
 
 [![SA-MP](https://img.shields.io/badge/SA--MP-0.3.7-blue)](https://www.sa-mp.mp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/discord/123456789012345678?label=Discord&logo=discord&logoColor=white)](https://discord.gg/awjDYAFpgW)
+[![Discord](https://img.shields.io/discord/123456789012345678?label=Discord&logo=discord&logoColor=white)](https://discord.gg/PhWWYrF3M8)
 
 **Clean Roleplay 2** es un gamemode optimizado para SA-MP basado en **Super Roleplay 2** (branch `bernard` del repositorio de **neetoons**).
 
